@@ -1,0 +1,6 @@
+.d-flex div button{
+  background: red;
+  &:hover{
+    opacity: .8;
+  }
+}

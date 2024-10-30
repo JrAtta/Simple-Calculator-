@@ -1,0 +1,152 @@
+<div class="min-vh-100 min-vw-100 bg-success bg-gradient mx-auto d-flex justify-content-center  ">
+  <div class="bg-dark bg-gradient w-100 h-100 rounded " style="margin-top: 5rem; max-width: 23rem;">
+
+    <!-- Calculater screen -->
+    <h1 class="shadow  fw-bold p-3 text-center text-secondary bg-dark bg-gradient ">
+      Angular Calculater
+    </h1>
+    <div class=" text-white">
+      <!-- function screen -->
+      <div class="text-end mb-1 fs-3 pe-2">
+        {{function}}
+      </div>
+
+      <!-- number screen -->
+      <div class=" text-end  pe-4 fw-light overflow-hidden" style="font-size: 60px;">
+        {{calcValue}}
+      </div>
+
+      <!-- First buttons row -->
+      <div class="d-flex bg-danger bg-gradient w-100 ">
+
+        <!-- clear button -->
+        <div class="w-50 bg-danger">
+          <button class="w-100 h-100 text-uppercase border p-3 text-white fs-3 bg-danger bg-gradient" (click)="onClickValue('c','function')">
+            c
+          </button>
+        </div>
+
+        <!-- percent button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-3 w-100 h-100 border   bg-danger bg-gradient" (click)="onClickValue('%','function')">
+            %
+          </button>
+        </div>
+        <!-- Division oprerator -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-3 w-100 h-100 border   bg-danger bg-gradient" (click)="onClickValue('/','function')">
+            /
+          </button>
+        </div>
+      </div>
+      <!-- Second buttons row -->
+      <div class="d-flex bg-danger bg-gradient w-100">
+        <!-- number 7 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-4 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('7','number')">
+            7
+          </button>
+        </div>
+
+        <!-- number 8 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('8','number')">
+            8
+          </button>
+        </div>
+        <!-- number 9 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('9','number')">
+            9
+          </button>
+        </div>
+        <!-- number multiplication button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('*','function')">
+            *
+          </button>
+        </div>
+      </div>
+
+      <!-- third buttons row -->
+      <div class="d-flex bg-danger bg-gradient w-100">
+        <!-- number 4 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('4','number')">
+            4
+          </button>
+        </div>
+
+        <!-- number 5 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('5','number')">
+            5
+          </button>
+        </div>
+        <!-- number 6 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('6','number')">
+            6
+          </button>
+        </div>
+        <!-- number minus button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('-','function')">
+            -
+          </button>
+        </div>
+      </div>
+      <!-- fourth buttons row -->
+      <div class="d-flex bg-danger bg-gradient w-100">
+        <!-- number 1 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('1','number')">
+            1
+          </button>
+        </div>
+
+        <!-- number 2 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('2','number')">
+            2
+          </button>
+        </div>
+        <!-- number 3 button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('3','number')">
+            3
+          </button>
+        </div>
+        <!-- number plus button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('+','function')">
+            +
+          </button>
+        </div>
+      </div>
+      <!-- fifth buttons row -->
+      <div class="d-flex bg-danger bg-gradient w-100">
+        <!-- number zero button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('0','number')">
+            0
+          </button>
+        </div>
+
+        <!-- number dot button -->
+        <div class="w-25 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('.','number')">
+            .
+          </button>
+        </div>
+        <!-- number equal button -->
+        <div class="w-50 bg-danger">
+          <button class="text-white fs-2 w-100 h-100 border p-2  bg-danger bg-gradient" (click)="onClickValue('=','function')">
+            =
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
